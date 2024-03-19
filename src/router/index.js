@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import CategoriaView from '../views/CategoriaView.vue';
 import EditoraView from '../views/EditoraView.vue';
+import AutorView from '../views/AutorView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,11 @@ const router = createRouter({
       path: '/editoras',
       name: 'editoras',
       component: EditoraView,
+    },
+    {
+      path: '/autor',
+      name: 'autor',
+      component: AutorView,
     },
   ],
 });
